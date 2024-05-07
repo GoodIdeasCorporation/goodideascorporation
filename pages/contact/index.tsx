@@ -16,7 +16,7 @@ export default function DocsPage() {
 }
 
 
-DocsPage.getLayout = function getLayout(page : React.ReactNode){
+DocsPage.getLayout = function getLayout(page : React.ReactElement){
 	return(
 	    <DefaultLayout>
 		    {page}

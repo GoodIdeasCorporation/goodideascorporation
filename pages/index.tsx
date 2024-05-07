@@ -16,7 +16,7 @@ export default function IndexPage() {
 }
 
 
-IndexPage.getLayout = function getLayout(page : React.ReactNode){
+IndexPage.getLayout = function getLayout(page : React.ReactElement){
 	return(
 	    <DefaultLayout>
 		 {page}
