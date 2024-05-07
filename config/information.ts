@@ -5,6 +5,7 @@ export const emailApi = {
 }
 
 export const contactInformation = { 
+     directEmail: "contact@goodsideas.com",
      facebook : "",
      line : "",
 }

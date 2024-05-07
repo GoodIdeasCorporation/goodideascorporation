@@ -3,6 +3,8 @@ import { Image } from '@nextui-org/react'
 export default function Footer() {
   const description = "Good Ideas Corporation Co., Ltd. was established on 9 February 2017. Good Ideas is a mid to large sized company that was run 3 business of home and accommodation, contractor, developer, and home services. We have an experience in various typed of house and restaurant such a pool villa house, bar, restaurant, all kind of extension and renovation work."
   const contact = ""
+  const currentYear = new Date().getFullYear();
+
   return (
      <section className='w-full  relative bg-white'>
       <div className='m-auto max-w-[1500px] '>
@@ -34,7 +36,7 @@ export default function Footer() {
       </div>
       <div className='h-[100px] w-full border-t-1 border-gray-300'>
           <div className='max-w-[1500px] m-auto flex min-[700px]:justify-start justify-center w-full items-center h-full'>
-            Copyright © 2024 Good Ideas Corporation Co., Ltd.
+            Copyright © {currentYear} Good Ideas Corporation Co., Ltd.
           </div>
         </div>
      </section>

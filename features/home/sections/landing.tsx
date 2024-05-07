@@ -5,7 +5,7 @@ import { useRouter } from 'next/router';
 import {motion , useScroll, useTransform } from 'framer-motion';
 
 export default function LandingSection() {
-     const title = "Good Ideas Good Team Good Chance Good Future";
+     const title = "Good Ideas: Good Team and Good Chance to build a Good Future";
      const description = "Run business by standard, honest and professional to serve our service"
      const router = useRouter();
      const ref = React.useRef(null)
@@ -27,7 +27,7 @@ export default function LandingSection() {
                   <div className='w-[180px] h-[50px]'>
                     <Button 
                     color='primary' 
-                    className='w-full h-full'
+                    className='w-full h-full rounded-none shadow-lg text-lg'
                     endContent = {<IoChevronForward/>}
                     onClick={() => router.push('/contact')}
                     >Contact Us</Button>

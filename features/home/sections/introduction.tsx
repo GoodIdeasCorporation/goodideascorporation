@@ -11,7 +11,7 @@ export default function IntroductionSection() {
      const subtitle = "Company Core Value"
 
   return (
-     <section className='w-full min-[700px]:h-[750px] h-[1200px] flex  justify-center justify gap-5  bg-white relative'>
+     <section className='w-full min-[700px]:h-[750px] h-[1300px] flex  justify-center justify gap-5  bg-white relative'>
         <section className='w-full max-w-[1000px] min-[700px]:flex min-[700px]:h-full  absolute z-10'>
            <div className='min-[700px]:w-3/4  w-full h-full p-2 flex  flex-col items-center justify-start gap-5 pt-[100px]'>
                <div className='w-full flex flex-col gap-5'>
@@ -24,7 +24,7 @@ export default function IntroductionSection() {
                  <div className='pt-5 w-fit m-auto p-4'>
                     <Image
                        width={500}
-                       height={300}
+                       height={500}
                        src="./cores.png"
                     />
                  </div>
@@ -33,7 +33,8 @@ export default function IntroductionSection() {
          <div className='w-full flex items-start justify-center relative min-[700px]:pt-[100px] '>
             <div className='absolute z-1'>
                <Image
-               width={300}
+               className='rounded-none'
+               width={350}
                src = "./intro.jpg"
                />
             </div>   

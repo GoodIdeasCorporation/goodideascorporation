@@ -141,7 +141,7 @@ const ContactBox : React.FC = () => {
           <Button 
           onPress={sendEmail} 
           color='primary' 
-          className='w-full h-full text-lg' 
+          className='w-full h-full text-lg shadow-lg rounded-none' 
           endContent  = {<IoChevronForward/>}
           isLoading = {isLoading}
           >Contact Us

@@ -27,7 +27,7 @@ const Navbar : React.FC = () => {
 					src = "./logo.png"
 					/>
 				</div>
-				<div id = "menu-tabs" className="gap-8 text-lg min-[700px]:flex hidden">
+				<div id = "menu-tabs" className="gap-8 text-lg min-[700px]:flex hidden ">
 					{MenuItems?.map((item:MenuItemType) => 
 						<button 
 						key = {item.label}
