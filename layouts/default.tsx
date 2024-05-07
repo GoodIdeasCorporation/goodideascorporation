@@ -7,7 +7,7 @@ import { barlow } from "@/pages/_app";
 export default function DefaultLayout({
 	children,
 }: {
-	children: React.ReactNode;
+	children: React.ReactElement;
 }) {
 	return (
 		<main className={barlow.className}>
