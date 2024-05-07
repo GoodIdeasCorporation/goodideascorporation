@@ -4,11 +4,7 @@ import { Head } from "./head";
 import { Footer } from "@/components";
 import { barlow } from "@/pages/_app";
 
-export default function DefaultLayout({
-	children,
-}: {
-	children: React.ReactElement;
-}) {
+export default function DefaultLayout({children} : {children: React.ReactElement}) {
 	return (
 		<main className={barlow.className}>
 		<div className="relative flex flex-col h-screen relative">
