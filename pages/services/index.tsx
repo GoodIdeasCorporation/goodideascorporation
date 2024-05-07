@@ -2,8 +2,9 @@ import DefaultLayout from '@/layouts/default'
 import ServicePage from '@/features/services'
 import Head from 'next/head'
 import { siteConfig } from '@/config/site'
+import { NextPageWithLayout } from '../_app'
 
-const DocsPage = () => {
+const DocsPage: NextPageWithLayout= () => {
   return (
 	<>
 		<Head>

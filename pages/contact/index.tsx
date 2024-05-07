@@ -3,8 +3,9 @@ import DefaultLayout from '@/layouts/default'
 import ContactPage from '@/features/contact'
 import Head from 'next/head'
 import { siteConfig } from '@/config/site'
+import { NextPageWithLayout } from '../_app'
 
-const DocsPage = () => {
+const DocsPage: NextPageWithLayout = () => {
   return (
 	<>
 		<Head>
