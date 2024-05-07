@@ -1,7 +1,7 @@
 export const emailApi = {
-  serviceId : "service_64w4r1n",
-  templateId : "template_ai1g2lg",
-  publicKey : "b6P3kEPWDCy1T1XaF"
+  serviceId : "service_t06232e",
+  templateId : "template_5tsguhq",
+  publicKey : "6TzfHO9ar3ou-D4Yf"
 }
 
 export const contactInformation = { 
