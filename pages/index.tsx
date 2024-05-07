@@ -12,7 +12,6 @@ import type { NextPageWithLayout } from './_app'
 const IndexPage : NextPageWithLayout = () => {
 	return (
 		<HomePage/>
-
 	);
 }
 
