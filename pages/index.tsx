@@ -8,12 +8,14 @@ import { GithubIcon } from "@/components/icons";
 import DefaultLayout from "@/layouts/default";
 import { HomePage } from "@/features/home";
 
-export default function IndexPage() {
+const IndexPage = () => {
 	return (
 		<HomePage/>
 
 	);
 }
+
+export default IndexPage;
 
 
 IndexPage.getLayout = function getLayout(page : React.ReactElement){

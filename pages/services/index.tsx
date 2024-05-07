@@ -3,7 +3,7 @@ import ServicePage from '@/features/services'
 import Head from 'next/head'
 import { siteConfig } from '@/config/site'
 
-export default function DocsPage() {
+const DocsPage = () => {
   return (
 	<>
 		<Head>
@@ -14,6 +14,8 @@ export default function DocsPage() {
 
   )
 }
+
+export default DocsPage
 
 
 DocsPage.getLayout = function getLayout(page : React.ReactElement){
