@@ -1,8 +1,7 @@
-import { title } from '@/components/primitives'
 import DefaultLayout from '@/layouts/default'
 import AboutPage from '@/features/about'
 import Head from 'next/head'
-import { SiteConfig, siteConfig } from '@/config/site'
+import { siteConfig } from '@/config/site'
 import { NextPageWithLayout } from '../_app'
 
 const DocsPage:NextPageWithLayout = () => {

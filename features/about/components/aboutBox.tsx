@@ -25,6 +25,7 @@ export default function AboutBox() {
         <div className='grid grid-cols-4 justify-center items-center'>
           {AboutPath.map((i:AboutPathType , index:number) => 
             <Image
+            key = {index}
             width={i.size}
             height={i.size}
             src = {i.path}

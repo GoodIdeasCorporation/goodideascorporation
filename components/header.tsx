@@ -1,6 +1,4 @@
 import React from 'react'
-import { title } from '@/components/primitives'
-
 
 type containerProps = {
   title : string

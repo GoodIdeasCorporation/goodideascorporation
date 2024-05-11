@@ -1,4 +1,3 @@
-import { title } from '@/components/primitives'
 import DefaultLayout from '@/layouts/default'
 import ContactPage from '@/features/contact'
 import Head from 'next/head'

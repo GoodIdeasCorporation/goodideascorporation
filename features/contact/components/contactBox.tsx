@@ -94,7 +94,7 @@ const ContactBox : React.FC = () => {
     setContactInfo((prev:any) => ({...prev,  [field] : e}));
   }
   return (
-    <section className='w-full flex flex-col min-[1000px]:flex-row  min-[1000px]:h-auto min-[700px]:h-[1400px] bg-white drop-shadow-xl'>
+    <section className='w-full flex flex-col min-[1000px]:flex-row  min-[1000px]:h-auto min-[1000px]:h-[1400px] bg-white drop-shadow-xl'>
       <div className='min-[1000px]:w-2/4  w-full bg-gray-50 border-r-1 p-8  flex flex-col gap-5'>
         <h1 className='text-3xl font-semibold'>Send Us A Message</h1>
         <div className='flex flex-col gap-5 pt-5'>
