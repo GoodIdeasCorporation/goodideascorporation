@@ -1,11 +1,4 @@
 import React from "react";
-import {
-TwitterIcon,
-GithubIcon,
-DiscordIcon,
-HeartFilledIcon,
-SearchIcon,
-} from "@/components/icons";
 import { MenuItemType , MenuItems} from "./assets/config";
 import { useRouter } from "next/router";
 import { Button, Image } from "@nextui-org/react";
