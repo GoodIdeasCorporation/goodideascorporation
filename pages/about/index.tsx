@@ -21,7 +21,7 @@ export default DocsPage;
 
 DocsPage.getLayout = function getLayout(page : React.ReactElement){
 	return(
-	    <DefaultLayout>
+	    <DefaultLayout footerDisable = {true}>
 		    {page}
 	    </DefaultLayout>
 	)

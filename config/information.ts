@@ -6,6 +6,8 @@ export const emailApi = {
 
 export const contactInformation = { 
      directEmail: "contact@goodsideas.com",
+     address: "86/64 Moo 10, Tambol Chalong, Muang Phuket, Phuket, Thailand 83130",
+     phone: "084-539-1541",
      facebook : "",
      line : "",
 }

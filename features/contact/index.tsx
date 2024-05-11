@@ -8,7 +8,7 @@ export default function ContactPage() {
             title='Contact Us'
             image = "./phuket.jpg"
           />
-          <div className='max-w-[1200px] h-[650px] flex items-center m-auto'>
+          <div className='max-w-[1200px] min-[700px:]:h-[650px] flex items-center m-auto'>
                <ContactBox/>
           </div>
     </div>

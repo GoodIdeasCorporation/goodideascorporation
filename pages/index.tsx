@@ -20,8 +20,8 @@ export default IndexPage;
 
 IndexPage.getLayout = function getLayout(page : React.ReactElement){
 	return(
-	    <DefaultLayout>
-		 {page}
+	    <DefaultLayout page = "index">
+		{page}
 	    </DefaultLayout>
 	)
 }

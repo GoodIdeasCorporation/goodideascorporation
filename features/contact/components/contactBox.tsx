@@ -94,7 +94,7 @@ const ContactBox : React.FC = () => {
     setContactInfo((prev:any) => ({...prev,  [field] : e}));
   }
   return (
-    <section className='w-full flex flex-col min-[1000px]:flex-row  min-[1000px]:h-auto h-[1400px] bg-white drop-shadow-xl'>
+    <section className='w-full flex flex-col min-[1000px]:flex-row  min-[1000px]:h-auto min-[700px]:h-[1400px] bg-white drop-shadow-xl'>
       <div className='min-[1000px]:w-2/4  w-full bg-gray-50 border-r-1 p-8  flex flex-col gap-5'>
         <h1 className='text-3xl font-semibold'>Send Us A Message</h1>
         <div className='flex flex-col gap-5 pt-5'>
@@ -159,7 +159,7 @@ const ContactBox : React.FC = () => {
               </div>
               <div>
                 <p className='text-xl font-semibold'>Call Us</p>
-                <p className='text-lg'>084-539-1541</p>
+                <p className='text-lg'>{contactInformation.phone}</p>
               </div>
             </div>
             <div className=' flex gap-5'>
@@ -168,7 +168,7 @@ const ContactBox : React.FC = () => {
               </div>
               <div>
                 <p className='text-xl font-semibold'>Our Location</p>
-                <p className='text-lg w-[200px]'>87/11 Moo 7, Tambol Chalong, Muang Phuket, Phuket, Thailand 83130</p>
+                <p className='text-lg w-[200px]'>{contactInformation.address}</p>
               </div>
             </div>
           </div>
@@ -178,7 +178,7 @@ const ContactBox : React.FC = () => {
               </div>
               <div>
                 <p className='text-xl font-semibold'>Our Email</p>
-                <p className='text-lg'>contact@goodsideas.com</p>
+                <p className='text-lg'>{contactInformation.directEmail}</p>
               </div>
           </div>
         </div>

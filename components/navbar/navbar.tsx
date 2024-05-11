@@ -24,7 +24,7 @@ const Navbar : React.FC = () => {
 				<div id = "logo" className="cursor-pointer" onClick={() => router.push('/')}>
 					<Image
 					width={130}
-					src = "./logo.png"
+					src = "./logo-heading.png"
 					/>
 				</div>
 				<div id = "menu-tabs" className="gap-8 text-lg min-[700px]:flex hidden ">

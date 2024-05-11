@@ -3,35 +3,15 @@ import { Divider } from '@nextui-org/react'
 import { Button } from '@nextui-org/react'
 import { IoChevronForward } from 'react-icons/io5'
 import { useRouter } from 'next/router'
+import { structPath } from '../assets/config'
+
+
+
+type structType = typeof structPath[0]
+
 export default function ServiceBox() {
      const router = useRouter()
-     const Folder = [{
-          title : "BUDZ and REZN BAR Phuket",
-          name : "BUDZanREZN",
-          label : "budz",
-          length : 4,
-          },{
-          title : "KOKYANG Villa Phuket",
-          name : "KOKYANG",
-          label : "kokyang",
-          length : 4
-          },{
-          title : "PANAME Resturant at Jungceylon Phuket",
-          name :"PANAME" , 
-          label : "paname",
-          length : 4,
-          },{
-          title : "The PIZZA Company Krabi",               
-          name :"Thepizza" , 
-          label : "thepizza",
-          length: 4, 
-          },{
-          title : "The WhiteHouse Phuket",
-          name : "WhiteHouse" ,
-          label: 'whitehouse',
-          length :3
-          }
-      ]
+   
   return (
     <section className='w-full min-h-[400px]  p-4'>
           <div className='w-full h-[150px] flex flex-col gap-4 justify-center'>
@@ -63,7 +43,7 @@ export default function ServiceBox() {
                     <h1 className='text-4xl font-bold'>Our Projects</h1>
                     <Divider className='w-[60px] h-[8px] bg-blue-500 ml-1'/>
                </div>
-               {Folder.map((folder:any , index:number) => (
+               {structPath.map((folder:structType , index:number) => (
                     <div className='pt-[50px] flex flex-col gap-5' key = {index}>
                          <div className=' flex flex-col gap-3'>
                               <h1 className='text-2xl font-semibold'>{folder.title}</h1>
@@ -72,12 +52,12 @@ export default function ServiceBox() {
                           <div className='w-full   flex  justify-center'>
                               <div className='w-full h-full flex min-[900px]:flex-row flex-col gap-3 items-center'>
                                    <div className='min-[900px]:w-[470px] w-full h-[350px]'>
-                                        <img src = {`./services/${folder.name}/${folder.label}_1.jpg`} className='w-full h-full object-cover'/>
+                                        <img src = {`./services/${folder.path}/${folder.fileName}_1${folder.filetype}`} className='w-full h-full object-cover'/>
                                    </div>       
                                    <div className='min-[900px]:w-fit w-full  grid grid-cols-2 gap-3'>
-                                        {Array.from({length : folder.length}).map((item:any , index:number) => (     
+                                        {Array.from({length : folder.length}).map((_ , index:number) => (     
                                         <div key = {index} className='min-[900px]:w-[200px] w-full min-[900px]:h-[170px] h-[250px]'>
-                                             <img src = {`./services/${folder.name}/${folder.label}_${(index+ 1) + 1}.jpg`} className='w-full h-full object-cover'/>
+                                             <img src = {`./services/${folder.path}/${folder.fileName}_${(index+ 1) + 1}${folder.filetype}`} className='w-full h-full object-cover'/>
                                         </div>
                                    ))}
                                    </div>

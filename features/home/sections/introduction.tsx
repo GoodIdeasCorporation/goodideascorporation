@@ -11,7 +11,7 @@ export default function IntroductionSection() {
      const subtitle = "Company Core Value"
 
   return (
-     <section className='w-full min-[700px]:h-[750px] h-[1300px] flex  justify-center justify gap-5  bg-white relative'>
+     <section className='w-full min-[700px]:h-[750px] h-[950px] flex  justify-center justify gap-5  bg-white relative'>
         <section className='w-full max-w-[1000px] min-[700px]:flex min-[700px]:h-full  absolute z-10'>
            <div className='min-[700px]:w-3/4  w-full h-full p-2 flex  flex-col items-center justify-start gap-5 pt-[100px]'>
                <div className='w-full flex flex-col gap-5'>
@@ -19,18 +19,8 @@ export default function IntroductionSection() {
                   <Divider className='w-[60px] h-[8px] bg-blue-500 ml-1'/>
                </div>
               <p className='w-[90%] text-start text-lg'>{description}</p>
-              <div className='w-full pl-5 pt-5 min-[700px]:flex'>
-                 <h1 className='w-[90%] text-2xl font-bold text-start'>{subtitle}</h1>
-                 <div className='pt-5 w-fit m-auto p-4'>
-                    <Image
-                       width={500}
-                       height={500}
-                       src="./cores.png"
-                    />
-                 </div>
-              </div>
            </div>
-         <div className='w-full flex items-start justify-center relative min-[700px]:pt-[100px] '>
+         <div className='w-full flex items-start justify-center relative min-[700px]:pt-[100px] min-[700px]:mt-0 mt-5 '>
             <div className='absolute z-1'>
                <Image
                className='rounded-none'
