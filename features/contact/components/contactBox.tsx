@@ -10,7 +10,7 @@ import { emailApi , contactInformation } from '@/config/information';
 
 type ContactInfoType = {
   from_name : string 
-  from_email : string 
+  from_email : string
   from_subject:string 
   message : string 
 }
