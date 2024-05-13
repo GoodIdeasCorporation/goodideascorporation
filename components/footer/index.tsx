@@ -11,14 +11,25 @@ const Footer : React.FC <FooterProps>  = ({page}) => {
   const currentYear = new Date().getFullYear();
   
   return (
-     <section className='w-full  relative bg-white'>
+     <section className='w-full  relative bg-white p-2'>
       <div className='m-auto max-w-[1500px] '>
         <div className='min-h-[400px] w-full min-[700px]:flex-row  flex flex-col  items-center '>
-        {page != "service"  ?
+        {
+        page == "index" ? 
+          <div className='min-[700px]:w-2/4 flex flex-col items-start gap-5 min-[700px]:pt-0 min-[700px]:pl-0 pl-3 pt-5'>
+            <h1 className='text-2xl font-bold'>Company Core Values</h1>
+            <Image
+            width={500}
+            src = {page == "index"  ? "./cores.jpg" : "./logo.png"}
+            />
+          </div>
+        : 
+        
+        page != "service"  ?
           <div className='min-[700px]:w-2/4 h-full flex gap-2 p-5 '>
             <div className='flex flex-col items-center'>
               <Image
-              width={page == "index" ? 300 :200}
+              width={200}
               src = {page == "index"  ? "./cores.jpg" : "./logo.png"}
               />
               <p className='min-[700px]:w-[70%] pt-3 text-lg'>{description}</p>
