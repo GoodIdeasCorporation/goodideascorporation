@@ -34,7 +34,7 @@ const Navbar : React.FC = () => {
 						<Button isIconOnly variant="light" className="text-white" onClick={() => window.open(contactInformation.facebook, '_blank')}>
 							<FaFacebook size={25}/>
 						</Button>
-						<Button isIconOnly variant="light" className="text-white" onClick={() => window.open(contactInformation.line, '_blank')}>
+						<Button isIconOnly variant="light" className="text-white" onClick={() => router.push("/line")}>
 							<FaLine size={25}/>
 						</Button>
 					</div>

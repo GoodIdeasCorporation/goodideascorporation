@@ -7,7 +7,7 @@ import { FaFacebook , FaLine} from "react-icons/fa";
 import AlertModal from '../modal/alert';
 import axios from 'axios';
 import { emailApi , contactInformation } from '@/config/information';
-
+import { useRouter } from 'next/router';
 type ContactInfoType = {
   from_name : string 
   from_email : string
@@ -16,6 +16,7 @@ type ContactInfoType = {
 }
 
 const ContactBox : React.FC = () => {
+  const router =  useRouter();
   const {isOpen, onOpen, onOpenChange} = useDisclosure();
   const [isInvalidEmail , setInvalidEmail]  = useState<boolean>(false);
   const [isInvalidText ,setInvalidText] = useState<boolean>(false)
@@ -40,8 +41,6 @@ const ContactBox : React.FC = () => {
 
     return validateEmail(contactInfo.from_email) ? false : true;
   }, [contactInfo.from_email]);
-
-  
 
   const sendEmail = async (e:any) => {
     setLoading(true);
@@ -188,7 +187,7 @@ const ContactBox : React.FC = () => {
               <Button isIconOnly variant='light' className='text-blue-500' onClick={() => window.open(contactInformation.facebook, '_blank')}>
                   <FaFacebook size={45} />
               </Button>
-              <Button isIconOnly variant='light' className='text-green-500' onClick={() => window.open(contactInformation.line, '_blank')}>
+              <Button isIconOnly variant='light' className='text-green-500'  onClick={() => router.push("/line")}>
                   <FaLine size={45} />
               </Button>
           </div>
