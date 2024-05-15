@@ -96,11 +96,12 @@ const ContactBox : React.FC = () => {
     <section className='w-full flex flex-col min-[1000px]:flex-row  min-[1000px]:h-auto min-[1000px]:h-[1400px] bg-white drop-shadow-xl'>
       <div className='min-[1000px]:w-2/4  w-full bg-gray-50 border-r-1 p-8  flex flex-col gap-5'>
         <h1 className='text-3xl font-semibold'>Send Us A Message</h1>
-        <div className='flex flex-col gap-5 pt-5'>
+        <div className='flex flex-col gap-5 pt-5 light'>
           <form onSubmit={sendEmail}>
             <Input  
             label="Name" 
             variant='underlined' 
+          
             isInvalid = {isInvalidText }
             errorMessage =  {isInvalidText && "Please Enter your name."}
             value={contactInfo.from_name} 
@@ -151,7 +152,7 @@ const ContactBox : React.FC = () => {
       <div className='min-[1000px]:w-2/4 w-full p-8'>
         <h1 className='text-3xl font-semibold' >Contact Info</h1>
         <div className='pt-10'>
-          <div className='flex justify-between'>
+          <div className='flex-col min-[700px]:flex justify-between'>
             <div className=' flex gap-5'>
               <div className='w-[50px] h-[50px] rounded-full bg-blue-500 flex items-center justify-center text-white'>
                 <FaPhoneFlip/>
@@ -161,7 +162,7 @@ const ContactBox : React.FC = () => {
                 <p className='text-lg'>{contactInformation.phone}</p>
               </div>
             </div>
-            <div className=' flex gap-5'>
+            <div className=' flex gap-5 min-[700px]:pt-0 min-[700px]:pb-0 pt-5 pb-5'>
               <div className='w-[50px] h-[50px] rounded-full bg-blue-500 flex items-center justify-center text-white'>
                 <FaLocationDot/>
               </div>

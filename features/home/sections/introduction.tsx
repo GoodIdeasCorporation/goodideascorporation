@@ -15,10 +15,10 @@ export default function IntroductionSection() {
         <section className='w-full max-w-[1000px] min-[700px]:flex min-[700px]:h-full  absolute z-10'>
            <div className='min-[700px]:w-3/4  w-full h-full p-2 flex  flex-col items-center justify-start gap-5 pt-[100px]'>
                <div className='w-full flex flex-col gap-5'>
-                  <h1 className={'w-[90%] text-4xl font-[800] text-start'}>{title}</h1>
+                  <h1 className={'w-[90%] text-4xl font-[800] text-start text-black'}>{title}</h1>
                   <Divider className='w-[60px] h-[8px] bg-blue-500 ml-1'/>
                </div>
-              <p className='w-[90%] text-start text-lg'>{description}</p>
+              <p className='w-[90%] text-start text-lg text-black'>{description}</p>
            </div>
          <div className='w-full flex items-start justify-center relative min-[700px]:pt-[100px] min-[700px]:mt-0 mt-5 '>
             <div className='absolute z-1'>

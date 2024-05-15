@@ -10,7 +10,7 @@ export default function DefaultLayout({children , page , footerDisable = false} 
 		<div className="relative flex flex-col h-screen relative">
 				<Head />
 				<Navbar/>
-				<main className={`w-full mx-auto flex-grow `}>
+				<main className={`w-full mx-auto flex-grow bg-white text-black`}>
 					{children}
 				</main>
 				<footer className="w-full flex items-center justify-center">

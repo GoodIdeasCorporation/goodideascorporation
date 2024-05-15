@@ -17,7 +17,7 @@ const Footer : React.FC <FooterProps>  = ({page}) => {
         {
         page == "index" ? 
           <div className='min-[700px]:w-2/4 flex flex-col items-start gap-5 min-[700px]:pt-0 min-[700px]:pl-0 pl-3 pt-5'>
-            <h1 className='text-2xl font-bold'>Company Core Values</h1>
+            <h1 className='text-2xl font-bold text-black'>Company Core Values</h1>
             <Image
             width={500}
             src = {page == "index"  ? "./cores.jpg" : "./logo.png"}
@@ -47,14 +47,14 @@ const Footer : React.FC <FooterProps>  = ({page}) => {
           
           <div className='min-[700px]:w-2/4 h-full  min-[700px]:flex block min-[700px]:justify-end min-[700px]:p-0  p-5 '>
            {page != "service" &&
-            <div className='min-[700px]:w-2/5 min-[700px]:pt-10'>
+            <div className='min-[700px]:w-2/5 min-[700px]:pt-10 text-black'>
               <h1 className='text-2xl font-bold'>Our Services</h1>
               <p className='pt-5 text-lg'>Home Builder</p>
               <p className='text-lg'>Renovation</p>
               <p className='text-lg'>Home Services</p>
             </div>
             } 
-            <div className='min-[700px]:w-2/5 pt-10'>
+            <div className='min-[700px]:w-2/5 pt-10 text-black'>
               <h1 className='text-2xl font-bold'>Contact Us</h1>
               <p className='pt-5 text-lg'>{contactInformation.address}</p>
               <p className='text-lg'>{contactInformation.phone}</p>

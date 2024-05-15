@@ -27,7 +27,7 @@ return (
             <div className='w-[180px] h-[50px]'>
             <Button 
             color='primary' 
-            className='w-full h-full rounded-none shadow-lg text-lg'
+            className='w-full h-full rounded-none shadow-lg text-lg '
             endContent = {<IoChevronForward/>}
             onPress={()=> router.push("/contact")}
             >Contact Us</Button>

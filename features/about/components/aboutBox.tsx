@@ -9,13 +9,13 @@ type AboutPathType = typeof AboutPath[0];
 export default function AboutBox() {
 
   return (
-    <section className='w-full min-h-[250px]  rounded-md  mt-10 min-[700px]:p-0 p-5'>
+    <section className='w-full min-h-[250px] rounded-md  mt-10 min-[700px]:p-0 p-5'>
      <div className='flex flex-col gap-7 bg-gray-100  p-5'>
-        <div className='flex flex-col gap-5'>
+        <div className='flex flex-col gap-5 text-black'>
           <h1 className='text-4xl font-bold'>Our Story</h1>
             <Divider className='w-[60px] h-[8px] bg-blue-500 ml-1'/>
         </div>
-        <p className='text-lg'>{aboutUsStory.description}</p>
+        <p className='text-lg text-black'>{aboutUsStory.description}</p>
      </div>
      <div className='w-full p-5 mt-5 flex flex-col gap-5'>
         <div className='flex flex-col gap-5'>

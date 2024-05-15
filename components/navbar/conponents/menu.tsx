@@ -19,7 +19,7 @@ const ResponsiveMenu : React.FC <MenuProps> = ({setIsOpen}) => {
               <Button 
               key = {item.value}  
               variant="light" 
-              className='w-full flex justify-start h-[50px] text-lg'
+              className='w-full text-black flex justify-start h-[50px] text-lg'
               onClick={() => {router.push(item.route); setIsOpen(false)}}
               >
                 {item.label}
